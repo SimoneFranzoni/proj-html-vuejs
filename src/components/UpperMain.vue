@@ -1,18 +1,16 @@
 <template>
   <div>
-      <header>
+      <header class="title">
         <h2>Music Is Life</h2>
         <div class="line"></div>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A autem alias provident ipsum, quaerat perspiciatis recusandae harum! Blanditiis, tempore placeat.</p>
       </header>
-      <main>
-        
+
+      <main>  
         <section class="title">
-          
           <h2>Latest Band News</h2>
           <div class="line"></div>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A autem alias provident ipsum, quaerat perspiciatis recusandae harum! Blanditiis, tempore placeat.</p>
-        
         </section>
         
         <section class="articles">
@@ -82,30 +80,13 @@ export default {
 <style scoped lang="scss">
 
   header{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: #323844;
-    padding: 50px 20%;
-    text-align: center;
   }
 
   main{
     background-color: #252a33;
     color: white;
-    height: fit-content;
-
-    .title{
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 50px 20%;
-      text-align: center;
-    }
+    height: 1370px;
 
     .container{
       padding: 0 5%;
