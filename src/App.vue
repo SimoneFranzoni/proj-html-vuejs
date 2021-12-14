@@ -5,6 +5,7 @@
     <GiantBtn />
     <LowerMain />
     <GiantBtn />
+    <Footer />
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import Header from './components/Header.vue';
 import UpperMain from './components/UpperMain.vue';
 import GiantBtn from './components/GiantBtn.vue';
 import LowerMain from './components/LowerMain.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
@@ -21,6 +23,7 @@ export default {
     UpperMain,
     GiantBtn,
     LowerMain,
+    Footer
   }
 }
 </script>

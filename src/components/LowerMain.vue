@@ -4,7 +4,7 @@
           <p>
               "I just listened to it and said to myself, "Man, i really love this album." Still, today, it just sounds so fresh. It sounds full of ideas. These guys knew what they were doing. They're good. And they're inventive. I haven't heard anything this year that's as inventive. I don't really expect to."
           </p>
-          <a href=""><i class="fas fa-play"></i></a>
+          <a href=""><img src="..\assets\img\band_interview_play_icon.png" alt=""></a>
       </div>
       <main>
         <div class="title">
@@ -65,7 +65,7 @@ export default {
             color: white;
             font-size: 20px;
         }
-
+        /*
         a{
             margin-top: 30px;
             background-color: #ea4a56;
@@ -81,6 +81,7 @@ export default {
                 text-decoration-line: none;
             }
         }
+        */    
     }
 
     main{

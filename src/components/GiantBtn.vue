@@ -25,12 +25,12 @@ export default {
         h2{
             font-size: 20px;
         }
-    }
 
-    a:hover{
-        background-color: white;
-        h2{
-            color: black;
-        }
+        &:hover{
+            background-color: white;
+            h2{
+                color: black;
+            }
+        }    
     }
 </style>
