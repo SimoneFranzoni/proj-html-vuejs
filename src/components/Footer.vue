@@ -19,7 +19,7 @@
                 <div>|</div>
                 <div>ALL RIGHT RESERVED</div>
                 <div>|</div>
-                <div>POWERED BY WORDPRESS</div>
+                <div>POWERED BY SIMONEFRANZONI</div>
             </div>
             <div class="social">
                 <a href="" class="box">

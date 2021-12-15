@@ -1,16 +1,16 @@
 <template>
   <div>
-    <Header />
+    <Home />
     <UpperMain />
-    <GiantBtn />
+    <GiantBtn title="view all latest news"/>
     <LowerMain />
-    <GiantBtn />
+    <GiantBtn title="view all live dates"/>
     <Footer />
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue';
+import Home from './components/Home.vue';
 import UpperMain from './components/UpperMain.vue';
 import GiantBtn from './components/GiantBtn.vue';
 import LowerMain from './components/LowerMain.vue';
@@ -19,7 +19,7 @@ import Footer from './components/Footer.vue';
 export default {
   name: 'App',
   components: {
-    Header,
+    Home,
     UpperMain,
     GiantBtn,
     LowerMain,

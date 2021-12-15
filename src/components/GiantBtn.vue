@@ -1,12 +1,15 @@
 <template>
     <a href="">
-        <h2>View all latest news</h2>
+        <h2>{{title}}</h2>
     </a>
 </template>
 
 <script>
 export default {
-    name: 'GiantBtn'
+    name: 'GiantBtn',
+    props: {
+        title: String
+    }
 }
 </script>
 

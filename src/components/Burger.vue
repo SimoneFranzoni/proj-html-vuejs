@@ -7,19 +7,25 @@
         </div>
         <div v-else 
             class="hamburger-menu">
-            <img src="../assets/img/avada-music-logo-retina.png" alt=""> 
+            <div class="upper-menu">
+                <img src="../assets/img/avada-music-logo-retina.png" alt=""> 
+                <div class="close"
+                @click="toggleActive">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
             <ul>
                 <li>
-                    <a href="#">Home</a>
+                    <a href="">Home</a>
                 </li>
                 <li>
                     <a href="#">Meet The Band</a>
                 </li>
                 <li>
-                    <a href="#">Live Dates</a>
+                    <a href="#live-dates">Live Dates</a>
                 </li>
                 <li>
-                    <a href="#">Latest News</a>
+                    <a href="#latest-band-news">Latest News</a>
                 </li>
                 <li>
                     <a href="#">Albums</a>
@@ -28,10 +34,7 @@
                     <a href="#">Fans</a>
                 </li>
             </ul>
-            <div class="close"
-            @click="toggleActive">
-                <i class="fas fa-times"></i>
-            </div>
+            
         </div>
     </div>
 </template>
@@ -73,14 +76,6 @@
         min-height: 100vh;
         background: #ea4a56;
 
-        img{
-            position: absolute;
-            width: 30%;
-            top: 0%;
-            left: 0%;
-            padding: 20px 40px;
-        }
-
         ul {
             display: flex;
             height: 100%;
@@ -103,15 +98,32 @@
         }
     }
 
-    .close {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
+    .upper-menu{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      position: absolute;
+      top: 0%;
+      padding: 20px 40px;
+
+      img{
+        width: 30%;
+      }
+
+      .close {
         color: white;
-        font-size: 35px;
+        font-size: 40px;
         text-decoration: none;
+        cursor: pointer;
+      }
+
     }
 
+    .open{
+        cursor: pointer;
+        font-size: 40px;
+    }
 
 </style>

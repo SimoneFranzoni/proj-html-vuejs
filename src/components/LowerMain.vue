@@ -12,7 +12,7 @@
             <div class="line"></div>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A autem alias provident ipsum, quaerat perspiciatis recusandae harum! Blanditiis, tempore placeat.</p>
         </div>
-        <div class="live-dates">
+        <div class="live-dates" id="live-dates">
             <div class="container">
                 <div class="box">
                     <div class="plus">+</div>

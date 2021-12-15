@@ -2,16 +2,14 @@
   <header>
     <div class="upper-header">
       <img src="../assets/img/avada-music-logo-retina.png" alt="">         
-      <a href="#" class="close">
-        <Burger />
-      </a>
+      <Burger />
     </div>
     <div id="title-container">
       <h1>Untold Stories</h1>
       <h2>There is an untold story behind every favourite song</h2>
       <div class="d-flex">
-        <div class="btn btn-red">LATEST ALBUM</div>
-        <div class="btn">LIVE DATES</div>
+        <a class="btn btn-red">LATEST ALBUM</a>
+        <a class="btn" href="#live-dates" >LIVE DATES</a>
       </div>
     </div>
   </header>
@@ -22,7 +20,7 @@ import Burger from './Burger.vue'
 
 export default {
   components: { Burger },
-  name: 'Header',
+  name: 'Home',
 
 }
 </script>
@@ -42,15 +40,12 @@ export default {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      align-content: center;
       position: absolute;
       padding: 20px 40px;
 
       img{
         width: 30%;
-      }
-
-      i{
-        font-size: 30px;
       }
 
     }
