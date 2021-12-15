@@ -14,7 +14,7 @@ export default {
     a{
         width: 100%;
         height: 100px;
-        background-color: #ea4a56;
+        background-color: # ;
         display: flex;
         justify-content: center;
         align-items: center;
