@@ -18,22 +18,7 @@
                     <div class="plus">+</div>
                     <div class="date">Ciaoooooooooooo</div>
                 </div>
-                <div class="box">
-                    <div class="plus">+</div>
-                    <div class="date">Ciaoooooooooooo</div>
-                </div>
-                <div class="box">
-                    <div class="plus">+</div>
-                    <div class="date">Ciaoooooooooooo</div>
-                </div>
-                <div class="box">
-                    <div class="plus">+</div>
-                    <div class="date">Ciaoooooooooooo</div>
-                </div>
-                <div class="box">
-                    <div class="plus">+</div>
-                    <div class="date">Ciaoooooooooooo</div>
-                </div>
+                
             </div>
         </div>
       </main>
@@ -90,7 +75,7 @@ export default {
         .live-dates{
             
             .container{
-                padding: 0px 20% 30px 20%;
+                padding: 0px 15% 30px 15%;
 
                 .box{
                     width: 100%;
