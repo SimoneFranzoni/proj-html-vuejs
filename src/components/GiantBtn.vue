@@ -14,10 +14,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import '../assets/style/vars.scss';
+
     a{
         width: 100%;
         height: 100px;
-        background-color: #ea4a56;
+        background-color: $red;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -32,7 +34,7 @@ export default {
         &:hover{
             background-color: white;
             h2{
-                color: black;
+                color: $black;
             }
         }    
     }

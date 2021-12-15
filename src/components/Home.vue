@@ -50,24 +50,7 @@ export default {
 
     }
 
-    .btn{
-      color: white;
-      border: 1px solid white;
-      border-radius: 1px;
-      margin: 0 10px;
-      padding: 10px 20px;
-      display: block;
-
-      &:hover{
-        background-color: white;
-        color: black;
-      }
-    }
-
-    .btn-red{
-      background-color: #ea4a56;
-      border: none;
-    }    
+    
   }
 
   #title-container{
@@ -89,6 +72,10 @@ export default {
       padding-bottom: 50px;
       font-style: italic;
       font-weight: lighter;
+    }
+
+    .btn{
+      margin: 0 10px;
     }
   }
 

@@ -53,9 +53,9 @@
         methods: {
             toggleActive(){
                 if(this.close === true){
-                this.close = false;
+                    this.close = false;
                 } else {
-                this.close = true;
+                    this.close = true;
                 }
             }
         }
@@ -65,6 +65,8 @@
 
 <style scoped lang="scss">
     
+    @import '../assets/style/vars.scss';
+
     .hamburger-menu {
         position: absolute;
         top: 0;
@@ -74,7 +76,7 @@
         height: 100vh;
         min-width: 100vw;
         min-height: 100vh;
-        background: #ea4a56;
+        background: $red;
 
         ul {
             display: flex;
@@ -85,7 +87,7 @@
             list-style: none;
             
             li a {
-                color: rgb(209, 205, 205);
+                color: #6b6b6c;
                 text-decoration: none;
                 font-size: 25px;
                 font-weight: lighter;

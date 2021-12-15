@@ -129,15 +129,25 @@ export default {
     name: 'UpperMain',
     data() {
       return {
+    
         orizontal_articles: {
-          title:['Tecnology and music', 'The flavor of rock'],
+          title:[
+            'Tecnology and music', 
+            'The flavor of rock'
+          ],
           text:[
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, optio.',
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, optio.',
           ]
         },
+
         vertical_articles:{
-          title:['While my guitar gently weeps', 'It just sound better', 'Taking it back to the old school', 'Sharing the stage with a legend'],
+          title:[
+            'While my guitar gently weeps', 
+            'It just sound better', 
+            'Taking it back to the old school', 
+            'Sharing the stage with a legend'
+          ],
           text:[
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, optio.',
             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, optio.',
@@ -151,20 +161,21 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  @import '../assets/style/vars.scss';
 
   header{
-    background-color: #323844;
+    background-color: $grey;
     
     .red-line{
       width: 20%;
       margin: 0 40%;
       height: 10px;
-      background-color: #ea4a56;
+      background-color: $red;
     }
   }
 
   main{
-    background-color: #252a33;
+    background-color: $black;
     color: white;
     height: 1600px;
 
@@ -187,7 +198,7 @@ export default {
       padding: 5px;
 
       .inner-box{
-        background-color: #323844;
+        background-color: $grey;
         height: 100%;
 
         a{
@@ -226,7 +237,7 @@ export default {
       
       
       h3{
-        color: #ea4a56;
+        color: $red;
         font-size: 20px;
         font-weight: bold;
       }

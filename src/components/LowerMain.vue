@@ -14,11 +14,33 @@
         </div>
         <div class="live-dates" id="live-dates">
             <div class="container">
-                <div class="box">
-                    <div class="plus">+</div>
-                    <div class="date">Ciaoooooooooooo</div>
+                <div 
+                :v-for="item in concerts"
+                class="box">
+                    <div v-if="close"
+                    class="concert-top">
+                        <div 
+                        @click="openMap"
+                        class="plus"> + </div>
+                        <div class="date">17/08/2020 Gem festival 2020 anakalia, georgia</div>
+                    </div>
+                    <div v-else>
+                        <div class="concert-top">
+                            <div 
+                            @click="openMap"
+                            class="minum"> - </div>
+                            <div class="date">17/08/2020 Gem festival 2020 anakalia, georgia</div>
+                        </div>
+                        <div class="concert-bottom">
+                            <div class="map"></div>
+                            <div class="text">
+                                <h2>Untold Stories</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, consequatur vel dolore blanditiis quia quas id molestias accusamus quo consectetur!</p>
+                                <div class="btn btn-red">Book now</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
             </div>
         </div>
       </main>
@@ -28,10 +50,52 @@
 <script>
 export default {
     name: 'LowerMain',
+    data() {
+        return{    
+            
+            close: true,
+
+            concerts: [
+                {
+                    date: '17/08/2020',
+                    name: 'Gem festival 2020 anakalia, georgia'
+                },
+                {
+                    date: '24/09/2020',
+                    name: 'Groovefest dominical republic'
+                },
+                {
+                    date: '31/10/2020',
+                    name: 'oasis festival 2020 marrakech, morocco'
+                },
+                {
+                    date: '07/11/2020',
+                    name: 'moga festival - essaouria. morocco'
+                },
+                {
+                    date: '10/12/2020',
+                    name: 'envision festival - uvita, costa rica'
+                },
+            ] 
+        }
+    },
+
+    methods: {
+        openMap(){
+            if(this.close === true){
+                this.close = false;
+            } else {
+                this.close = true;
+            }
+            console.log(this.open)
+        }
+    }
 }
 </script>
 
 <style lang="scss" scoped>
+
+    @import '../assets/style/vars.scss';
 
     .jumbotrone{
         background-image: url('../assets/img/home-testimonial-parallax.jpg');
@@ -50,50 +114,87 @@ export default {
             color: white;
             font-size: 20px;
         }
-        /*
-        a{
-            margin-top: 30px;
-            background-color: #ea4a56;
-            border-radius: 50px;
-            width: 70px;
-            height: 70px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
-            i{
-                color: white;
-                text-decoration-line: none;
-            }
-        }
-        */    
+          
     }
 
     main{
-        background-color: #252a33;
+        background-color: $black;
         
         .live-dates{
             
             .container{
-                padding: 0px 15% 30px 15%;
+                padding: 0px 10% 30px 10%;
 
                 .box{
-                    width: 100%;
-                    background-color: #323844;
+                    background-color: $grey;
                     display: flex;
-                    padding: 10px 0;
-                    margin: 10px 0;
+                    flex-direction: column;
+                    
+                    .concert-top{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        padding: 10px 0;
+                        margin: 10px 0;
 
-                    .plus{
-                        padding: 0 25px;
-                        color: white;
+                        .plus{
+                            padding: 0 24px;
+                            color: white;
+                            cursor: pointer;
+                        }
+
+                        .minum{
+                            margin: 0 16px;
+                            padding: 0 9px;
+                            color: white;
+                            cursor: pointer;
+                            background-color: $red;
+                        }
+
+                        .date{
+                            color: $red;
+                            text-transform: uppercase;
+                        }
                     }
 
-                    .date{
-                        color: #ea4a56;
-                        text-transform: uppercase;
+                    .concert-bottom{  
+                        padding: 0 20px 20px 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .map{
+                            width: 30%;
+                            height: 200px;
+                            background-image: url("../assets/img/mappa.png");
+                            background-position: center;
+                            background-size: cover;
+                        }
+
+                        .text{
+                            padding: 20px 20px 0 50px;
+                            height: 200px;
+                            width: 70%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            
+                            h2{
+                                font-size: 16px;
+                                font-weight: 400;
+                            }
+
+                            p{
+                                font-size: 15px;
+                            }
+
+                            .btn{
+                                width: 150px;
+                                
+                            }
+                        }
                     }
-                }
+                }                
             }
         }
     }
