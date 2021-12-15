@@ -1,8 +1,10 @@
 <template>
   <header>
     <div class="upper-header">
-      <img src="../assets/img/avada-music-logo-retina.png" alt="">
-      <div><i class="fas fa-bars"></i></div>
+      <img src="../assets/img/avada-music-logo-retina.png" alt="">         
+      <a href="#" class="close">
+        <Burger />
+      </a>
     </div>
     <div id="title-container">
       <h1>Untold Stories</h1>
@@ -16,7 +18,10 @@
 </template>
 
 <script>
+import Burger from './Burger.vue'
+
 export default {
+  components: { Burger },
   name: 'Header',
 
 }
@@ -91,7 +96,5 @@ export default {
       font-weight: lighter;
     }
   }
-
- 
 
 </style>
