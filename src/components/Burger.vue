@@ -15,23 +15,10 @@
                 </div>
             </div>
             <ul>
-                <li>
-                    <a href="">Home</a>
-                </li>
-                <li>
-                    <a href="#">Meet The Band</a>
-                </li>
-                <li>
-                    <a href="#live-dates">Live Dates</a>
-                </li>
-                <li>
-                    <a href="#latest-band-news">Latest News</a>
-                </li>
-                <li>
-                    <a href="#">Albums</a>
-                </li>
-                <li>
-                    <a href="#">Fans</a>
+                <li 
+                v-for="(li,index) in navbar_li"
+                :key="index">
+                    <a href="">{{navbar_li[index]}}</a>
                 </li>
             </ul>
             
@@ -47,6 +34,8 @@
         data(){
             return{
                 close: true,
+
+                navbar_li:['Home', 'Meet The Band', 'Live Dates', 'Latest News', 'Albums', 'Fans'],
             }
         },
 
@@ -72,10 +61,8 @@
         top: 0;
         left: 0;
         padding: 20vh 0;
-        width: 100vh;
+        width: 100%;
         height: 100vh;
-        min-width: 100vw;
-        min-height: 100vh;
         background: $red;
 
         ul {
@@ -87,7 +74,7 @@
             list-style: none;
             
             li a {
-                color: #6b6b6c;
+                color: #e6e6e6;
                 text-decoration: none;
                 font-size: 25px;
                 font-weight: lighter;

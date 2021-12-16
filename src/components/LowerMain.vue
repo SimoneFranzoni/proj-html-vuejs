@@ -15,21 +15,22 @@
         <div class="live-dates" id="live-dates">
             <div class="container">
                 <div 
-                :v-for="item in concerts"
+                v-for="(item, index) in concerts"
+                :key= "index"
                 class="box">
                     <div v-if="close"
                     class="concert-top">
                         <div 
                         @click="openMap"
                         class="plus"> + </div>
-                        <div class="date">17/08/2020 Gem festival 2020 anakalia, georgia</div>
+                        <div class="date">{{item.date}} {{item.name}}</div>
                     </div>
                     <div v-else>
                         <div class="concert-top">
                             <div 
                             @click="openMap"
                             class="minum"> - </div>
-                            <div class="date">17/08/2020 Gem festival 2020 anakalia, georgia</div>
+                            <div class="date">{{item.date}} {{item.name}}</div>
                         </div>
                         <div class="concert-bottom">
                             <div class="map"></div>
@@ -50,15 +51,16 @@
 <script>
 export default {
     name: 'LowerMain',
+
     data() {
         return{    
-            
+
             close: true,
 
             concerts: [
                 {
                     date: '17/08/2020',
-                    name: 'Gem festival 2020 anakalia, georgia'
+                    name: 'Gem festival 2020 anakalia, georgia',
                 },
                 {
                     date: '24/09/2020',

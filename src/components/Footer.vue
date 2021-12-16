@@ -3,12 +3,10 @@
         <section class="footer-top">
             <img src="..\assets\img\avada-music-logo.png" alt="">
             <div>
-                <a href="">Home</a>
-                <a href="">Meet The Band</a>
-                <a href="">Live Dates</a>
-                <a href="">Latest News</a>
-                <a href="">Album</a>
-                <a href="">Fans</a>
+                <a 
+                v-for="(li,index) in navbar_li"
+                :key="index"
+                href="">{{navbar_li[index]}}</a>
             </div>
         </section>
         <section class="footer-bottom">
@@ -42,6 +40,11 @@
 <script>
 export default {
 
+    data(){
+        return{
+            navbar_li:['Home', 'Meet The Band', 'Live Dates', 'Latest News', 'Albums', 'Fans'],
+        }
+    }
 }
 </script>
 

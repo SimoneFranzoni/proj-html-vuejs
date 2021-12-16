@@ -21,7 +21,6 @@ import Burger from './Burger.vue'
 export default {
   components: { Burger },
   name: 'Home',
-
 }
 </script>
 
